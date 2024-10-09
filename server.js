@@ -8,7 +8,7 @@ app.use(express.json());
 // Define a POST route for the endpoint
 app.post("/", (req, res) => {
   const body = req.body;
-  console.log("body", body);
+  console.log("Received data:", JSON.stringify(body, null, 4))
   res.json(body);
 });
 
