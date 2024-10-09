@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Define a POST route for the endpoint
-app.post("/hello", (req, res) => {
+app.post("/", (req, res) => {
   const body = req.body;
   console.log("body", body);
   res.json(body);
